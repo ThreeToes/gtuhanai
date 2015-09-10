@@ -1,0 +1,26 @@
+﻿<Window x:Class="Gtuhanai.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gtuhanai Mischief Maker" Height="350" Width="525"
+        DataContext="{Binding RelativeSource={RelativeSource Self}, Path=ViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="0" ItemsSource="{Binding Path=Tools}"
+                    SelectedItem="{Binding Path=SelectedTool}">
+            <ListView.Template>
+                <ControlTemplate>
+                    <StackPanel IsItemsHost="True" Orientation="Horizontal" HorizontalAlignment="Left"/>
+                </ControlTemplate>
+            </ListView.Template>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path=ToolName}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ContentControl Grid.Row="1" Content="{Binding Path=SelectedTool.Control}" />
+    </Grid>
+</Window>

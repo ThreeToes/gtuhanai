@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gtuhanai", "Gtuhanai\Gtuhanai.csproj", "{1C92E9C1-26E1-4E7A-A299-1DA382F7C50C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gtuhanai.Library", "Gtuhanai.Library\Gtuhanai.Library.csproj", "{9F3AC689-1724-4E26-BE0C-12362E1E7B2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gtuhanai.Tests", "Gtuhanai.Tests\Gtuhanai.Tests.csproj", "{0102D2DA-669E-4956-88B8-2C2EED81F755}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C92E9C1-26E1-4E7A-A299-1DA382F7C50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C92E9C1-26E1-4E7A-A299-1DA382F7C50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C92E9C1-26E1-4E7A-A299-1DA382F7C50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C92E9C1-26E1-4E7A-A299-1DA382F7C50C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3AC689-1724-4E26-BE0C-12362E1E7B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3AC689-1724-4E26-BE0C-12362E1E7B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3AC689-1724-4E26-BE0C-12362E1E7B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3AC689-1724-4E26-BE0C-12362E1E7B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0102D2DA-669E-4956-88B8-2C2EED81F755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0102D2DA-669E-4956-88B8-2C2EED81F755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0102D2DA-669E-4956-88B8-2C2EED81F755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0102D2DA-669E-4956-88B8-2C2EED81F755}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
