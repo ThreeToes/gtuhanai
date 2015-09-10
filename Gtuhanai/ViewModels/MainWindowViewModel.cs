@@ -30,7 +30,7 @@ namespace Gtuhanai.ViewModels
             set
             {
                 _selectedTool = value;
-                OnPropertyChanged("SelectedTool");
+                OnPropertyChanged();
             }
         }
 
