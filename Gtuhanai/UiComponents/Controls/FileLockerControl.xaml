@@ -14,7 +14,13 @@
         <ListView Grid.Row="0"
                   SelectionMode="Single"
                   ItemsSource="{Binding RelativeSource={RelativeSource AncestorType=controls:FileLockerControl}, Path=ViewModel.LockedFiles}"
-                  SelectedItem="{Binding RelativeSource={RelativeSource AncestorType=controls:FileLockerControl}, Path=ViewModel.SelectedFile}"/>
+                  SelectedItem="{Binding RelativeSource={RelativeSource AncestorType=controls:FileLockerControl}, Path=ViewModel.SelectedFile}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path=Path}"></TextBlock>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />

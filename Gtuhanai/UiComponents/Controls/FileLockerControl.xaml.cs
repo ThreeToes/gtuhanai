@@ -27,13 +27,9 @@ namespace Gtuhanai.UiComponents.Controls
         public FileLockerControl(IFileLockerViewModel vm)
         {
             ViewModel = vm;
-        }
-
-        public FileLockerControl()
-        {
             InitializeComponent();
         }
-
+        
 
         private void OnAddClicked(object sender, RoutedEventArgs e)
         {
