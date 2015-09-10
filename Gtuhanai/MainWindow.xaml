@@ -4,23 +4,20 @@
         Title="Gtuhanai Mischief Maker" Height="350" Width="525"
         DataContext="{Binding RelativeSource={RelativeSource Self}, Path=ViewModel}">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <ListView Grid.Row="0" ItemsSource="{Binding Path=Tools}"
+        <TabControl ItemsSource="{Binding Path=Tools}"
                     SelectedItem="{Binding Path=SelectedTool}">
-            <ListView.Template>
-                <ControlTemplate>
-                    <StackPanel IsItemsHost="True" Orientation="Horizontal" HorizontalAlignment="Left"/>
-                </ControlTemplate>
-            </ListView.Template>
-            <ListView.ItemTemplate>
+            <TabControl.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Path=ToolName}" />
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ContentControl Grid.Row="1" Content="{Binding Path=SelectedTool.Control}" />
+            </TabControl.ItemTemplate>
+            <TabControl.ContentTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <ContentPresenter Content="{Binding Path=SelectedTool.Control}" />
+                    </Grid>
+                </DataTemplate>
+            </TabControl.ContentTemplate>
+        </TabControl>
     </Grid>
 </Window>
